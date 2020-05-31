@@ -1,0 +1,30 @@
+<div class="card {% if not blog_post.publish_date %} border border-info {% endif %}">
+  <div class="card-body">
+    <h5 class="card-title">
+      {% if blog_post.image %}
+      <img src="{{ blog_post.image.url }}" alt="Post Image" class="card-img-top">
+      {% endif %}
+      {{blog_post.title}}
+    </h5>
+    <p class="card-text">
+      {% if truncate %}
+      <small class="text-muted">{{ blog_post.publish_date }}</small>
+      {{ blog_post.content|truncatewords:15|linebreaks }}
+
+      {% else %}
+
+      {{ blog_post.content|linebreaks }}
+
+      {% endif %}
+
+
+      {% if not detail %}
+
+      <span class="badge badge-info">{% if not blog_post.publish_date %} Draft {% endif %}</span>
+      <a href="{{ blog_post.get_absolute_url }}" class="badge badge-success">
+        View More </a>
+
+      {% endif %}
+    </p>
+  </div>
+</div>

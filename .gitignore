@@ -1,0 +1,11 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+/.vscode
+.vscode
+static_cdn_test/media
+static_cdn_test/blank
+static_cdn_test/static
+
+src/.vscode
+src/staticfiles
+src/static_cdn_test/media

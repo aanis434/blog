@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+  <div class="col-6 mx-auto">
+    <h2>{{ title }}</h2>
+    {% for list in object %}
+    <span>
+      {% include "blog/list-inline.html" with blog_post=list truncate=True detail=False %}
+    </span>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

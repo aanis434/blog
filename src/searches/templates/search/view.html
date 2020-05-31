@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+    <div class="col-6 mx-auto">
+        {% if query %}
+        <h3>You Search for {{ query }}</h3>
+        {% else %}
+        <form class="form-inline my-2 my-lg-0" action="/search/">
+            {% csrf_token %}
+            <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+            </button>
+        </form>
+        {% endif %}
+
+        {% if not blog_list %}
+        <p>Sorry! Search result not found!</p>
+        {% endif %}
+
+        {% for list in blog_list %}
+        <span>{% include 'blog/list-inline.html' with blog_post=list detail=False %}</span>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
