@@ -1,3 +1,10 @@
+
+
+# About
+
+This Blog is a learning project. I love to explore. To learn the Django framework, I developed this project. I enjoyed a lot doing this project and became a big fan of Django.
+
+
 ## This project was developed with:
 
     Python => 3.8
@@ -10,10 +17,7 @@
 In the project directory, you can find:
 
     Auth Module
-    Blog
-    Search
+    Blog Module
+    Searching Module
 
 
-#### About
-
-Blog is my learnig project. i love to explore new thing. To learn django framework i developed this project. It is a simple site but efficient for me. I enjoy a lot doing this project.
