@@ -1,8 +1,8 @@
 
 
-# About
+# Blog
 
-This Blog is a learning project. I love to explore. To learn the Django framework, I developed this project. I enjoyed a lot doing this project and became a big fan of Django.
+The blog is my learning project. I love to explore. To learn the Django framework, I developed this project. Though it is my first project on Django, I  enjoyed a lot doing this project and become a big fan of Django.
 
 
 ## This project was developed with:
